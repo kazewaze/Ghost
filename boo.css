@@ -12,48 +12,57 @@ html {
 }
 
 @media screen and (min-width: 324px) {
-  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
   html { font-size: 18.75px; }
+  main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
+  main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 411.50px) {
-  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
   html { font-size: 19.50px; }
+  main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
+  main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 499px) {
-  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
   html { font-size: 20.25px; }
+  main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
+  main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 586.50px) {
-  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
   html { font-size: 21px; }
+  main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
+  main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 674px) {
-  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
   html { font-size: 21.75px; }
+  main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
+  main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 761.50px) {
-  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
   html { font-size: 22.50px; }
+  main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
+  main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 849px) {
-  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
   html { font-size: 23.25px; }
+  main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
+  main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 936.50px) {
-  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
   html { font-size: 24px; }
+  main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
+  main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 1024px) {
-  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
   html { font-size: 24.75px; }
+  main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
+  main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 h1 { font-size: 4rem; }
@@ -73,7 +82,7 @@ input[type="button"] { font-size: 1rem; }
 button,
 input[type="submit"],
 input[type="reset"],
-input[type="button"] { {
+input[type="button"] {
   border: 3px solid #000;
   color: #fff;
   background-color: #000;
