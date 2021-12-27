@@ -1,0 +1,96 @@
+/*
+* -------------------------------------------
+* Boo is just a fallback for older browsers
+* and always comes before Ghost when linking.
+* -------------------------------------------
+*/
+
+html {
+  font-size: 18px;
+  line-height: 1.25rem;
+  letter-spacing: 0.0625rem;
+}
+
+@media screen and (min-width: 324px) {
+  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
+  html { font-size: 18.75px; }
+}
+
+@media screen and (min-width: 411.50px) {
+  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
+  html { font-size: 19.50px; }
+}
+
+@media screen and (min-width: 499px) {
+  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
+  html { font-size: 20.25px; }
+}
+
+@media screen and (min-width: 586.50px) {
+  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
+  html { font-size: 21px; }
+}
+
+@media screen and (min-width: 674px) {
+  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
+  html { font-size: 21.75px; }
+}
+
+@media screen and (min-width: 761.50px) {
+  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
+  html { font-size: 22.50px; }
+}
+
+@media screen and (min-width: 849px) {
+  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
+  html { font-size: 23.25px; }
+}
+
+@media screen and (min-width: 936.50px) {
+  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
+  html { font-size: 24px; }
+}
+
+@media screen and (min-width: 1024px) {
+  * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
+  html { font-size: 24.75px; }
+}
+
+h1 { font-size: 4rem; }
+h2 { font-size: 3.50rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2.5rem; }
+h5 { font-size: 2rem; }
+h6 { font-size: 1.50rem; }
+
+p,
+a,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] { font-size: 1rem; }
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] { {
+  border: 3px solid #000;
+  color: #fff;
+  background-color: #000;
+}
+
+button:hover,
+button:focus,
+button:active,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  color: #000;
+  background-color: #fff;
+}

@@ -1,0 +1,293 @@
+/*
+* -------------------------------
+* Ghost V1.0.0
+* Kaycee Ingram - <kazewaze>
+* Copyright (c) 2021-2022
+* www.GitHub.com/kazewaze/Ghost
+* Free to use - MIT License.
+* 12/24/2021
+* -------------------------------
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+/* Ghost's System Defaults
+* ------------------------------------------------
+* Most vars aren't used to keep things
+* simple but provided for convenience.
+* Only font-sizing and letter-spacing are used.
+* The boo.css file serves as a backup for older
+* browsers that don't work with calc/vars.
+* Always include them in the following order:
+* <link rel="stylesheet" href="./boo.css">
+* <link rel="stylesheet" href="./ghost.css">
+* <link rel="stylesheet" href="./your-styles.css">
+* ------------------------------------------------
+*/
+
+:root {
+  --ghost-min-width: 324px;
+  --ghost-max-width: 1024px;
+  --ghost-font: "Readex Pro";
+  --ghost-font-backup: "Inter";
+  --ghost-font-sizing: calc(18px + 6.75 * ((100vw - 324px) / 700));
+  --ghost-letter-spacing: 0.0625em;
+  --ghost-color: #000;
+  --ghost-background: #fff;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+  /* width: 100%;
+  min-width: 100%; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  font-family: sans-serif;
+  font-size: calc(100% + 2px);
+  line-height: calc(1.125em + 0.625rem);
+  letter-spacing: var(--ghost-letter-spacing);
+  text-transform: none;
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  text-shadow: none !important;
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+}
+
+body {
+  width: 100%;
+  min-width: 100%;
+  overflow-x: hidden;
+  font-weight: 400;
+  font-family: "Readex Pro", "Inter", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+/* body .container {
+  width: 100%;
+  max-width: 1024px;
+} */
+
+@media screen and (min-width: 324px) {
+
+  html { font-size: var(--ghost-font-sizing); }
+
+  main {
+    margin: calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25);
+  }
+
+  main * {
+    margin: var(--ghost-font-sizing) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing)*2.25) calc(var(--ghost-font-sizing)/4.25);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html { font-size: 24px; }
+}
+
+h1 { font-size: 4rem; }
+h2 { font-size: 3.50rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2.5rem; }
+h5 { font-size: 2rem; }
+h6 { font-size: 1.50rem; }
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body label { font-weight: 500; }
+
+main, section { min-height: 100%; }
+
+img,
+picture,
+video,
+canvas,
+svg,
+article,
+aside,
+figure,
+footer,
+header,
+aside,
+main {
+  display: block;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+}
+
+a,
+input,
+button,
+textarea,
+label,
+select {
+  font: inherit;
+}
+
+ol, ul { list-style-type: none; }
+
+a, li {
+  text-decoration: none;
+}
+
+a,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a {
+  display: inline;
+  border-bottom: calc(var(--ghost-font-sizing)/6) solid #000;
+  color: #000;
+  background: transparent;
+}
+
+a:hover {
+  font-weight: 700;
+  border-bottom: none;
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: block;
+  text-align: center;
+  padding: .0625rem .5000rem;
+  border: 3px solid #000;
+  border-radius: 3px;
+  white-space: nowrap;
+  color: #fff;
+  background-color: #000;
+}
+
+button:hover,
+button:focus,
+button:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active,
+input[type="email"]:active,
+input[type="number"]:active,
+input[type="search"]:active,
+input[type="text"]:active,
+input[type="tel"]:active,
+input[type="url"]:active,
+input[type="password"]:active { outline: none; }
+
+button:hover,
+button:focus,
+button:active,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus
+input[type="submit"]:active,
+input[type="reset"]:active,
+input[type="button"]:active {
+  color: #000;
+  background-color: #fff;
+}
+
+select,
+textarea,
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"] {
+  height: calc(var(--ghost-font-sizing)*2);
+  padding: 6px 10px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1.5px solid #000;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+select:focus,
+select:active,
+textarea:focus,
+textarea:active,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="email"]:active,
+input[type="number"]:active,
+input[type="search"]:active,
+input[type="text"]:active,
+input[type="tel"]:active,
+input[type="url"]:active,
+input[type="password"]:active {
+  border: 3px solid #000;
+}
+
+::selection {
+  color: #fff;
+  background: #000; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #000; /* Gecko Browsers */
+}
+
+#root, #__next {
+  isolation: isolate;
+}

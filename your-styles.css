@@ -1,0 +1,94 @@
+/*
+* Your styles go here to build on Ghost.
+* Example styling below to get ya started:
+*/
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 60px;
+  min-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 120px 0;
+  padding: 14px;
+  color: #fff;
+  background-color: #000;
+  z-index: 1001;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav > ul > li > a {
+  margin-left: 14px;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.hero p {
+  text-align: center;
+  margin-top: 0;
+}
+
+.hero img {
+  height: 300px;
+  width: 300px;
+  margin: 0;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-width: 100vw;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  color: #fff;
+  background-color: #000;
+}
+
+.footer > h6 {
+  padding: 7px;
+}
+
+.footer > h6 > a {
+  color: #fff;
+}
+
+.whatever-else {}
