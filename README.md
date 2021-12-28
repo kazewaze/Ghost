@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="300px" width="300px" src="./images/Ghost.svg" alt="Ghost Logo"/>
+  <img height="150px" width="300px" src="./images/Ghost.svg" srcset="./images/Ghost.png" alt="Ghost Logo">
 </p>
 
 ---
