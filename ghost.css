@@ -37,16 +37,6 @@
   --ghost-background: #fff;
 }
 
-::selection {
-  color: #fff;
-  background: #000; /* WebKit/Blink Browsers */
-}
-
-::-moz-selection {
-  color: #fff;
-  background: #000; /* Gecko Browsers */
-}
-
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -55,6 +45,21 @@
   margin: 0;
   padding: 0;
   outline: none;
+}
+
+::selection {
+  color: #fff;
+  background: #000; /* WebKit/Blink Browsers */
+}
+
+::-webkit-selection {
+  color: #fff;
+  background: #000;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #000; /* Gecko Browsers */
 }
 
 #root {
@@ -150,18 +155,6 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
-a,
-input,
-button,
-textarea,
-label,
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  white-space: normal;
-  font: inherit;
-}
-
 ol, ul { list-style-type: none; }
 
 a, li {
@@ -170,23 +163,32 @@ a, li {
 
 a,
 button,
+input[type="button"],
 input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+input[type="reset"] {
   margin: 0;
   padding: 0;
   border: none;
-  white-space: normal;
-  font-weight: 600;
   cursor: pointer;
 }
 
+a,
+button,
+input,
+textarea,
+label,
+select,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="file"]::file-selector-button,
 input:is([type="button"], [type="submit"], [type="reset"]) {
   -webkit-appearance: none;
   -moz-appearance: none;
   white-space: normal;
+  font: inherit;
+  font-weight: 600;
+  color: #000;
 }
 
 input:is([type="button"], [type="submit"], [type="reset"]), input[type="file"]::file-selector-button, button {
@@ -206,9 +208,10 @@ a:hover {
 }
 
 button,
+input[type="button"],
 input[type="submit"],
 input[type="reset"],
-input[type="button"] {
+input:is([type="button"], [type="submit"], [type="reset"]) {
   display: block;
   text-align: center;
   padding: .0625rem .5000rem;
