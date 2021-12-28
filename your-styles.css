@@ -62,10 +62,12 @@
   margin-top: 0;
 }
 
-.hero img {
-  height: 300px;
-  width: 300px;
+.hero_logo {
   margin: 0;
+  padding: 100px 70px 100px 70px;
+  font-size: 100px;
+  font-weight: 800;
+  font-family: 'Fira Sans', "Inter", "Readex Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .footer {
