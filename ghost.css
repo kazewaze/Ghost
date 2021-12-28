@@ -37,6 +37,16 @@
   --ghost-background: #fff;
 }
 
+::selection {
+  color: #fff;
+  background: #000; /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #000; /* Gecko Browsers */
+}
+
 *, ::before, ::after {
   box-sizing: border-box;
 }
@@ -45,6 +55,10 @@
   margin: 0;
   padding: 0;
   outline: none;
+}
+
+#root {
+  isolation: isolate;
 }
 
 html, body {
@@ -265,13 +279,11 @@ input[type="password"] {
   padding: 6px 10px;
   box-sizing: border-box;
   box-shadow: none;
-  border: 3px solid #000;
+  border: 1.5px solid #000;
   border-radius: 3px;
   background-color: #fff;
 }
 
-/* Causes Issue with Footer alignment. Working on a fix...
--------------------------------------------------------------
 select:focus,
 select:active,
 textarea:focus,
@@ -291,18 +303,4 @@ input[type="tel"]:active,
 input[type="url"]:active,
 input[type="password"]:active {
   border: 3px solid #000;
-} */
-
-::selection {
-  color: #fff;
-  background: #000; /* WebKit/Blink Browsers */
-}
-
-::-moz-selection {
-  color: #fff;
-  background: #000; /* Gecko Browsers */
-}
-
-#root, #__next {
-  isolation: isolate;
 }
