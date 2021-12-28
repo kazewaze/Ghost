@@ -64,7 +64,7 @@
 
 .hero_logo {
   margin: 0;
-  padding: 100px 70px 100px 70px;
+  padding: 100px 0 160px 0;
   font-size: 100px;
   font-weight: 800;
   font-family: 'Fira Sans', "Inter", "Readex Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -81,6 +81,7 @@
   justify-content: center;
   align-items: center;
   padding: 14px;
+  font-family: 'Fira Sans', "Inter", "Readex Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   background-color: #000;
 }
@@ -93,4 +94,7 @@
   color: #fff;
 }
 
-.whatever-else {}
+.footer_logo,
+.footer_handle-logo {
+  font-weight: 800;
+}
