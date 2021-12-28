@@ -13,6 +13,7 @@
 .container {
   width: 100%;
   max-width: 1024px;
+  flex: 1 0 auto;
 }
 
 .header {
@@ -80,6 +81,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   padding: 14px;
   font-family: 'Fira Sans', "Inter", "Readex Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
