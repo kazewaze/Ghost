@@ -3,6 +3,30 @@
 * Example styling below to get ya started:
 */
 
+/*
+  Fluid Scaling No longer included in Ghost due to possible issues.
+  Added to user-styles for live example site simplicity.
+*/
+
+main {
+  margin: calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25);
+}
+
+main * {
+  margin: var(--ghost-font-sizing) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing)*2.25) calc(var(--ghost-font-sizing)/4.25);
+}
+
+@media screen and (min-width: 324px) {
+
+  main {
+    margin: calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25);
+  }
+
+  main * {
+    margin: var(--ghost-font-sizing) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing)*2.25) calc(var(--ghost-font-sizing)/4.25);
+  }
+}
+
 #root {
   display: flex;
   flex-direction: column;

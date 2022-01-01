@@ -12,55 +12,55 @@ html {
 }
 
 @media screen and (min-width: 324px) {
-  html { font-size: 18.75px; }
+  body { font-size: 1.042rem; }
   main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
   main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 411.50px) {
-  html { font-size: 19.50px; }
+  body { font-size: 1.084rem; }
   main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
   main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 499px) {
-  html { font-size: 20.25px; }
+  body { font-size: 1.126rem; }
   main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
   main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 586.50px) {
-  html { font-size: 21px; }
+  body { font-size: 1.168rem; }
   main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
   main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 674px) {
-  html { font-size: 21.75px; }
+  body { font-size: 1.210rem; }
   main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
   main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 761.50px) {
-  html { font-size: 22.50px; }
+  body { font-size: 1.252rem; }
   main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
   main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 849px) {
-  html { font-size: 23.25px; }
+  body { font-size: 1.294rem; }
   main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
   main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 936.50px) {
-  html { font-size: 24px; }
+  body { font-size: 1.336rem; }
   main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
   main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
 
 @media screen and (min-width: 1024px) {
-  html { font-size: 24.75px; }
+  body { font-size: 1.378rem; }
   main { margin: 7.25rem .3125rem 7.25rem .3125rem; }
   main * { margin: 1.25rem .3125rem 1.25rem .3125rem; }
 }
