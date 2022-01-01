@@ -4,4 +4,4 @@
 
 ---
 
-### A CSS stylesheet that handles resets, fluid font and margin scaling, basic styling, and a pretty solid starting point. No more starting from scratch.
+### A CSS stylesheet that handles resets, fluid font scaling, basic styling, and a pretty solid starting point. No more starting from scratch.
