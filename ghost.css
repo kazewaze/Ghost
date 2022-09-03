@@ -16,7 +16,7 @@
 * Most vars aren't used to keep things
 * simple but provided for convenience.
 * Only font-sizing and letter-spacing are used.
-* The boo.css file serves as a backup for older
+* The legacy-browsers.css file serves as a backup for older
 * browsers that don't work with calc/vars.
 * Always include them in the following order:
 * <link rel="stylesheet" href="./legacy-browsers.css">
