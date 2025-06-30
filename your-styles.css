@@ -8,8 +8,20 @@
   Added to user-styles for live example site simplicity.
 */
 
+:root {
+  --main-color: #ffffff;
+  --main-bg: #000000;
+
+  --link-color: #ffffff;
+  --link-interaction-color: #d8d8d8;
+
+  --header-height: 70px;
+  --footer-height: 87.5px;
+  --margin-calc-value: 120px;
+}
+
 main {
-  margin: calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25);
+  margin: calc(var(--ghost-font-sizing) + var(--margin-calc-value)) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing) + var(--margin-calc-value)) calc(var(--ghost-font-sizing)/4.25);
 }
 
 main * {
@@ -17,9 +29,8 @@ main * {
 }
 
 @media screen and (min-width: 324px) {
-
   main {
-    margin: calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing) + 120px) calc(var(--ghost-font-sizing)/4.25);
+    margin: calc(var(--ghost-font-sizing) + var(--margin-calc-value)) calc(var(--ghost-font-sizing)/4.25) calc(var(--ghost-font-sizing) + var(--margin-calc-value)) calc(var(--ghost-font-sizing)/4.25);
   }
 
   main * {
@@ -45,34 +56,40 @@ main * {
   left: 0;
   right: 0;
   position: fixed;
-  height: 60px;
+  height: var(--header-height);
   min-width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin: 0 0 120px 0;
-  padding: 14px;
-  color: #fff;
-  background-color: #000;
+  margin: 0;
+  padding: 0;
+  color: var(--main-color);
+  background-color: var(--main-bg);
   z-index: 1001;
 }
 
+.header__logo-link {
+  border: none;
+  color: none;
+  background: transparent;
+}
+
+/*
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .nav > ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .nav > ul > li > a {
   margin-left: 14px;
   color: #fff;
 }
+*/
 
 .hero {
   display: flex;
@@ -100,27 +117,31 @@ main * {
   left: 0;
   right: 0;
   min-width: 100vw;
-  height: 240px;
+  height: var(--footer-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  padding: 14px;
+  margin: 0;
+  padding: 0;
   font-family: 'Fira Sans', "Inter", "Readex Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #fff;
-  background-color: #000;
+  color: var(--main-color);
+  background-color: var(--main-bg);
 }
 
-.footer > h6 {
+.footer__gh-link {
   padding: 7px;
+  border: none;
+  font-size: 1.50rem;
+  font-weight: 900;
+  line-height: .950;
+  color: var(--link-color);
 }
 
-.footer > h6 > a {
-  color: #fff;
-}
-
-.footer_logo,
-.footer_handle-logo {
-  font-weight: 800;
+.footer__gh-link:active,
+.footer__gh-link:hover,
+.footer__gh-link:focus,
+.footer__gh-link:focus-within {
+  color: var(--link-interaction-color);
 }

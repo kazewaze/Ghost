@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Ghost</title>
+    <title>Ghost.css</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="author" content="Kaycee Ingram">
-    <meta name="description" content="A CSS stylesheet that you build on.">
+    <meta name="description" content="A CSS stylesheet that handles resets, fluid font scaling, basic styling, and a pretty solid starting point.">
 
-    <meta property="og:title" content="Ghost">
-    <meta property="og:description" content="A CSS stylesheet that you build on.">
-    <meta property="og:image" content="./images/Ghost.png">
-    <meta property="og:url" content="/index.html">
-    <meta property="og:site_name" content="Ghost">
-    <meta name="twitter:card" content="./images/Ghost.svg">
-    <meta name="twitter:image:alt" content="Ghost CSS">
+    <meta property="og:title" content="Ghost.css">
+    <meta property="og:description" content="A CSS stylesheet that handles resets, fluid font scaling, basic styling, and a pretty solid starting point.">
+    <meta property="og:image" content="./images/ghost-css.svg">
+    <meta property="og:url" content="https://ghost-css.netlify.app">
+    <meta property="og:site_name" content="Ghost.css">
+    <meta name="twitter:card" content="./images/ghost-css.svg">
+    <meta name="twitter:image:alt" content="./images/ghost.svg">
 
     <link rel="stylesheet" href="./legacy-browsers.css">
     <link rel="stylesheet" href="./ghost.css">
     <link rel="stylesheet" href="./your-styles.css">
 
-    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="./images/ghost.svg">
   </head>
   <body>
     <div id="root">
       <header class="header">
         <nav class="nav">
-          <ul>
-            <li><a href="https://kaycee.vercel.app/" target="_blank" rel="noreferrer">Kaycee</a></li>
-            <li><a href="https://kaycee.vercel.app/" target="_blank" rel="noreferrer">William</a></li>
-            <li><a href="https://kaycee.vercel.app/" target="_blank" rel="noreferrer">Ingram</a></li>
-          </ul>
+          <a class="header__logo-link" href="https://kayceeingram.com" target="_blank" rel="noreferrer">
+            <img
+              height="50px"
+              width="250px"
+              src="./images/kaycee.svg"
+              alt="Ghost Graphic Logo"
+            />
+          </a>
         </nav>
       </header>
       <div class="container">
         <main>
           <div class="hero">
-            <h1 class="hero_logo">Ghost</h1>
+            <img height="239px" width="255px" src="./images/ghost-css.svg" alt="Ghost Graphic Logo" />
             <p>A CSS stylesheet that handles resets, fluid font scaling, basic styling, and a pretty solid starting point. No more starting from scratch.</p>
           </div>
           <br>
           <section>
-            <h1>Heading</h1>
+            <h1>H1</h1>
             <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content!</p>
           </section>
           <section>
-            <h2>Heading 2</h2>
+            <h2>H2</h2>
             <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content!</p>
           </section>
           <section>
-            <h3>Heading 3</h3>
+            <h3>H3</h3>
             <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content!</p>
           </section>
           <section>
-            <h4>Heading 4</h4>
+            <h4>H4</h4>
             <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content!</p>
           </section>
           <section>
-            <h5>Heading 5</h5>
+            <h5>H5</h5>
             <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content!</p>
           </section>
           <section>
-            <h6>Heading 6</h6>
+            <h6>H6</h6>
             <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content!</p>
           </section>
           <form action="" method="get" class="form-example">
@@ -94,9 +97,7 @@
         </main>
       </div>
       <footer class="footer">
-        <h6 class="footer_handle-logo"><a href="https://github.com/kazewaze" target="_blank" rel="noreferrer">kazewaze</a></h6>
-        <h6>&</h6>
-        <h6 class="footer_logo"><a href="https://github.com/kazewaze/Ghost" target="_blank" rel="noreferrer">Ghost.css</a></h6>
+        <a class="footer__gh-link" href="https://github.com/kazewaze/Ghost" target="_blank" rel="noreferrer">GitHub</a>
       </footer>
     </div>
   </body>
