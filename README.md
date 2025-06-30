@@ -1,5 +1,5 @@
 <div align="center">
-  <img height="auto" width="255px" src="./images/ghost-css.svg" srcset="./images/ghost-css.svg" alt="Ghost Graphic Logo">
+  <img height="auto" width="255px" src="./images/ghost-css-readme.svg" srcset="./images/ghost-css-readme.svg" alt="Ghost Graphic Logo">
 </div>
 
 ---
